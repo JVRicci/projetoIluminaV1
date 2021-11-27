@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>ILLUMINI</title><!---CENTRAL DE RECLAMACOES PARA PROBLEMAS DE ILUMINAÇÃO-->
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<style>
+	* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Baloo 2', cursive;
+}
+.typewriter {
+	position: fixed;
+	z-index: 1;
+}
+.typewriter h2 {
+	text-align: center;
+	position: fixed;
+	color: #fff;
+	font-size: 50px;
+	margin-top: 20%;
+	overflow: hidden;
+	left: 25%;
+}
+.typewriter h3 {
+	text-align: center;
+	position: fixed;
+	color: #fff;
+	font-size: 25px;
+	margin-top: 20%;
+	overflow: hidden;
+	left: 35%;
+	top: 10%;
+}
+.animation-area {
+	background: linear-gradient(to left, #7658a3, #a878f0);
+	width: 100%;
+	height: 100vh;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: #b0a3c4;
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+.btn-registrar{
+width: 150px;
+height: 40px;
+border: 4px solid #cccccc;
+background: transparent;
+color: white;
+overflow: hidden;
+margin-top: 0px;
+padding: 0px;
+padding-bottom: 0px;
+position: absolute;
+display: inline-block;
+left: 570%;
+top: 12%;
+cursor: pointer;
+text-decoration: none;
+outline: none;
+underline: none;
+pointer-events: auto;
+border-radius: 12px 7px 12px 7px;
+font-size: 14px;
+}
+.btn-registrar:hover{
+background: transparent;
+text-transform: uppercase;
+font-weight: bold;
+color: white;
+}
+.banner-text {
+	position: fixed;
+	z-index: 1;
+}
+.banner-text ul li {
+	display: inline-block;
+	padding: 40px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+	float: center;
+}
+.banner-text1 .inicio{
+transform: translate(80%,5%);
+}
+.banner-text2 .nps{
+transform: translate(330%,-95%);
+}
+.banner-text3 .cont{
+transform: translate(375%,-195%);
+}
+.banner-text4 .sn{
+transform: translate(420%,-295%);
+}
+.banner-text ul li:hover {
+cursor: pointer;
+}
+
+.banner-text1 .tooltiptext_inicio{
+visibility: hidden;
+width: 120px;
+background-color: #4f899e;
+color: black;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+left: 220px;
+top: 80px;
+text-decoration: none;
+underline: none;	
+justify-content: flex-start;
+transition: .1s;
+transition-duration: .1s;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none; 
+cursor: normal;
+-webkit-border-radius: 5px;
+font-family: 'Baloo 2', cursive;
+}
+.banner-text1:hover .tooltiptext_inicio{
+visibility: visible;
+font-size: 99%;
+transform: translateY(20px); 
+transition: all 0.4s ease-out;
+top: 65px;
+}
+.banner-text1:hover .tooltiptext_inicio span{
+display: block;
+}
+.banner-text1 .tooltiptext_inicio:before{
+content: '';
+display: block;
+width: 0;
+height: 0;
+position: absolute;
+border-top: 8px solid transparent;
+border-bottom: 8px solid #4f899e;
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+top: -15px;
+left: 55px;
+}
+.banner-text2 .tooltiptext_nps{
+visibility: hidden;
+width: 120px;
+background-color: #4f899e;
+color: black;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+left: 380px;
+top: 80px;
+text-decoration: none;
+underline: none;	
+justify-content: flex-start;
+transition: .1s;
+transition-duration: .1s;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none; 
+cursor: normal;
+-webkit-border-radius: 5px;
+font-family: 'Baloo 2', cursive;
+}
+.banner-text2:hover .tooltiptext_nps{
+visibility: visible;
+font-size: 99%;
+transform: translateY(20px); 
+transition: all 0.4s ease-out;
+top: 65px;
+}
+.banner-text2:hover .tooltiptext_nps span{
+display: block;
+}
+.banner-text2 .tooltiptext_nps:before{
+content: '';
+display: block;
+width: 0;
+height: 0;
+position: absolute;
+border-top: 8px solid transparent;
+border-bottom: 8px solid #4f899e;
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+top: -15px;
+left: 55px;
+}
+.banner-text3 .tooltiptext_cont{
+visibility: hidden;
+width: 120px;
+background-color: #4f899e;
+color: black;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+left: 510px;
+top: 80px;
+text-decoration: none;
+underline: none;	
+justify-content: flex-start;
+transition: .1s;
+transition-duration: .1s;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none; 
+cursor: normal;
+-webkit-border-radius: 5px;
+font-family: 'Baloo 2', cursive;
+}
+.banner-text3:hover .tooltiptext_cont{
+visibility: visible;
+font-size: 99%;
+transform: translateY(20px); 
+transition: all 0.4s ease-out;
+top: 65px;
+}
+.banner-text3:hover .tooltiptext_cont span{
+display: block;
+}
+.banner-text3 .tooltiptext_cont:before{
+content: '';
+display: block;
+width: 0;
+height: 0;
+position: absolute;
+border-top: 8px solid transparent;
+border-bottom: 8px solid #4f899e;
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+top: -15px;
+left: 55px;
+}
+.banner-text4 .tooltiptext_sn{
+visibility: hidden;
+width: 120px;
+background-color: #4f899e;
+color: black;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+left: 570px;
+top: 80px;
+text-decoration: none;
+underline: none;	
+justify-content: flex-start;
+transition: .1s;
+transition-duration: .1s;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none; 
+cursor: normal;
+-webkit-border-radius: 5px;
+font-family: 'Baloo 2', cursive;
+}
+.banner-text4:hover .tooltiptext_sn{
+visibility: visible;
+font-size: 99%;
+transform: translateY(20px); 
+transition: all 0.4s ease-out;
+top: 65px;
+}
+.banner-text4:hover .tooltiptext_sn span{
+display: block;
+}
+.banner-text4 .tooltiptext_sn:before{
+content: '';
+display: block;
+width: 0;
+height: 0;
+position: absolute;
+border-top: 8px solid transparent;
+border-bottom: 8px solid #4f899e;
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+top: -15px;
+left: 55px;
+}
+.tooltiptext_sn:hover::before {
+    animation: aaa .4s 1;
+    top: 0%;
+    left: -10%;
+}
+.tooltiptext_nps:hover::before {
+    animation: aaa .4s 1;
+    top: 0%;
+    left: -10%;
+}
+.tooltiptext_inicio:hover::before {
+    animation: aaa .4s 1;
+    top: 0%;
+    left: -10%;
+}
+.tooltiptext_cont:hover::before {
+    animation: aaa .4s 1;
+    top: 0%;
+    left: -10%;
+}
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 0%;
+    }
+
+    50% {
+        left: 10%;
+        top: 0%;
+    }
+
+    100% {
+        top: 0%;
+        left: -4%;
+    }
+}
+
+.contentbox1{
+width: 770px;
+height: 450px;
+background: #063545;
+position: fixed;
+transform: translate(38%,30%);
+border-radius: 10px 10px 10px 10px;
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+opacity : 0.3;
+}
+.contentbox2{
+width: 745px;
+height: 400px;
+background: white;
+position: fixed;
+transform: translate(41%,42%);
+border-radius: 10px 10px 10px 10px;
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+opacity: 0.8;
+}
+.registrar{
+width: 150px;
+height: 40px;
+border: none;
+background: #132abf;
+color: white;
+overflow: hidden;
+margin-top: 0px;
+padding: 0px;
+padding-bottom: 0px;
+position: absolute;
+display: inline-block;
+left: 530%;
+top: 12%;
+cursor: pointer;
+text-decoration: none;
+font-weight: bold;
+outline: none;
+underline: none;
+pointer-events: auto;
+border-radius: 12px 12px 12px 12px;
+font-size: 14px;
+transform:translate(405%,1230%);
+}
+.registrar:hover{
+background: transparent;
+text-transform: uppercase;
+font-weight: bold;
+color: black;
+border: 4px solid #cccccc;
+} 
+.p1{
+transform: translate(3%,-40%);
+position: fixed;
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+color: black;
+font-family: 'Baloo 2', cursive;
+}
+.p2{
+transform: translate(2%,70%);
+position: fixed;
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+color: black;
+font-family: 'Baloo 2', cursive;
+}
+.contentbox3{
+width: 4px;
+height: 4px;
+background: transparent;
+border-radius: 0px;
+position: fixed;
+transform: translate(12584%,1860%);
+border-color: white;
+border: 2px solid white;
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+}
+.contentbox4{
+width: 4px;
+height: 4px;
+background: transparent;
+border-radius: 0px;
+position: fixed;
+transform: translate(12630%,1830%);
+border-color: white;
+border: 2px solid white;
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+}
+.contentbox5{
+width: 12px;
+height: 7px;
+background: white;
+border-radius: 10px 10px 10px 10px;
+position: fixed;
+transform: translate(8150%,2120%);
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+}
+.img4{
+width: 12px;
+height: 12px;
+border-radius: 50%;
+transform: translate(4300%,610%);
+position: fixed;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none; 
+cursor: normal;
+}
+.contentbox6{
+width: 200px;
+height: 300px;
+background: black;
+position: fixed;
+transform: translate(72%,15%);
+border-radius: 10px 10px 10px 10px;
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+opacity : 0.8;
+}
+.contentbox7{
+width: 170px;
+height: 220px;
+background: white;
+position: fixed;
+transform: translate(94%,33%);
+border-radius: 10px 10px 10px 10px;
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+opacity: 0.8;
+}
+.contentbox8{
+width: 50px;
+height: 7px;
+background: #37373b;
+border-radius: 10px 10px 10px 10px;
+position: fixed;
+transform: translate(455%,800%);
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+opacity: 0.5;
+}
+.contentball1{
+width: 35px;
+height: 35px;
+background: black;
+border-radius: 50%;
+position: fixed;
+transform: translate(655%,855%);
+filter: drop-shadow(3px 1px 3px white);
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+opacity: 0.8;
+}
+.contentball2{
+width: 15px;
+height: 15px;
+background: transparent;
+border-radius: 50%;
+border: 2px solid white;
+position: fixed;
+transform: translate(1252%,1615%);
+text-decoration: none;
+display: inline-block;
+overflow: hidden;
+underline: none;
+outline: none;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none;
+cursor: normal;
+opacity: 0.2;	
+}
+.img5{
+width: 190px;
+height: 140px;
+border-radius: 50%;
+transform: translate(38%,40%);
+position: fixed;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none; 
+cursor: normal;
+opacity: 0.7;
+}
+.img6{
+width: 10px;
+height: 20px;
+border-radius: 50%;
+transform: translate(1020%,490%);
+position: fixed;
+pointer-events: none;
+-webkit-user-select: none;
+-ms-user-select: none; 
+user-select: none; 
+cursor: normal;
+opacity: 0.8;
+}
+.adm{
+width: 150px;
+height: 40px;
+border: 4px solid #cccccc;
+background: transparent;
+color: white;
+overflow: hidden;
+margin-top: 0px;
+padding: 0px;
+padding-bottom: 0px;
+position: absolute;
+display: inline-block;
+left: 530%;
+top: 12%;
+cursor: pointer;
+text-decoration: none;
+outline: none;
+underline: none;
+pointer-events: auto;
+border-radius: 12px 7px 12px 7px;
+font-size: 14px;
+transform:translate(790%,50%);
+}
+.adm:hover{
+background: transparent;
+text-transform: uppercase;
+font-weight: bold;
+color: white;
+}
+	</style>
+</head>
+<body>
+	<div class="typewriter">
+	<section class="phones">
+	<section class="contentbox1"></section>
+	<section class="contentbox2"></section>
+	<section class="contentbox3"></section>
+	<section class="contentbox4"></section>
+	<section class="contentbox5"></section>
+	<!--<section class="contentbox6"></section>
+	<section class="contentbox7"></section>
+	<section class="contentbox8"></section>
+	<section class="contentball1"></section>
+	<section class="contentball2"></section>-->
+	<h2 class="p1" style="font-size: 36px;color:black;"><center>Bem vindo(a) a Illumini!</center></h2>
+	<h2 class="p2" style="font-size: 28px;color:black;"><center>Reclame em nossa plataforma sobre os problemas <br> de iluminação de sua cidade ou seu bairro.</center></h2>
+	<section class="img4"><img src="x.png" class="img4"></section>
+	<!--<section class="img5"><img src="mapa.png" class="img5"></section>
+	<section class="img6"><img src="pin.png" class="img6"></section>-->
+</section>
+</div>
+<div class="banner-text">
+<section class="botao2">
+			<a href="login.html"><button class="adm" id="adm" style="font-family: 'Baloo 2', cursive; font-size:16px;">Sair</button></a>
+</section>
+<section class="botao">
+			<a href="feedback.html"><button class="registrar" id="registrar" style="font-family: 'Baloo 2', cursive;">VAMOS LÁ!</button></a>
+</section>
+</div>
+	<div class="animation-area">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>
